@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: midnightblue;
+    color: white;
+    font-size: 60px;
+    align-items: center;
+    justify-content: center;
+}
