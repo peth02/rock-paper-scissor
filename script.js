@@ -25,7 +25,7 @@ function playRound(player, computer) {
 
 function showScore(round){
     if(round !== 0){
-        score.innerText = `player = ${scorePlayer} com = ${scoreCom}`;
+        score.innerText = `YOU = ${scorePlayer} COM = ${scoreCom}`;
     }else{
         score.innerText = ``;
     }
@@ -34,7 +34,7 @@ function showScore(round){
 function showPlayerChoice(choice){
     let playerSelection = choice.innerText;
     if(round !== 0){
-        player.innerText = `player choose ${playerSelection.toLowerCase()}`;
+        player.innerText = `You choose ${playerSelection.toLowerCase()}`;
     }else{
         player.innerText = ``;
     }
@@ -43,7 +43,7 @@ function showPlayerChoice(choice){
 function showComChoice(){
     let computerSelection = getComputerChoice();
     if(round !== 0){
-        com.innerText = `com choose ${computerSelection.toLowerCase()}`;
+        com.innerText = `Com choose ${computerSelection.toLowerCase()}`;
     }else{
         com.innerText = ``;
     }
@@ -82,6 +82,7 @@ function restart(choice){
     const container = document.querySelector("div");
     const button = document.createElement("button");
     button.innerText = "restart?";
+    button.classList.add("button");
     container.appendChild(button);
     button.addEventListener("click", () => {
         round = 0;
